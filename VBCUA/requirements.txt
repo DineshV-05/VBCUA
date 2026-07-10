@@ -1,16 +1,16 @@
-pip install streamlit
-pip install openai-whisper
-pip install sentence-transformers
-pip install librosa
-pip install soundfile
-pip install matplotlib
-pip install numpy
-pip install scipy
-pip install nltk
-pip install transformers
-pip install torch
-pip install reportlab
-pip install fpdf2
-pip install pandas
-pip install scikit-learn
-pip install pydub
+streamlit
+openai-whisper
+sentence-transformers
+librosa
+soundfile
+matplotlib
+numpy
+scipy
+nltk
+transformers
+torch
+reportlab
+fpdf2
+pandas
+scikit-learn
+pydub
