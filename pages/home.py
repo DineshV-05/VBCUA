@@ -26,6 +26,10 @@ def home():
 
     hero()
 
+    st.markdown("---")
+    st.markdown(
+        "#### Deployment status: Render-friendly mode — optional AI features are detected dynamically."
+    )
     st.write("")
 
     # -------------------------------------------------
@@ -96,7 +100,11 @@ def home():
         )
 
     button_disabled = not whisper_ready
-    if st.button("🚀 Analyze Explanation", use_container_width=True, disabled=button_disabled):
+    if st.button(
+        "🚀 Analyze Explanation",
+        use_container_width=True,
+        disabled=button_disabled
+    ):
 
         if audio is None:
 
