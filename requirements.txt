@@ -1,16 +1,13 @@
 streamlit
-openai-whisper
-sentence-transformers
 librosa
 soundfile
 matplotlib
 numpy
 scipy
 nltk
-transformers
-torch
 reportlab
 fpdf2
 pandas
 scikit-learn
 pydub
+plotly
