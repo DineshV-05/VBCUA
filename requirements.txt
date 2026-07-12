@@ -1,13 +1,9 @@
 streamlit
-librosa
-soundfile
-matplotlib
 numpy
-scipy
-nltk
+matplotlib
+scikit-learn
 reportlab
 fpdf2
 pandas
-scikit-learn
 pydub
 plotly

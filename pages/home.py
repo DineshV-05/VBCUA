@@ -5,18 +5,13 @@ from components.hero import hero
 from components.cards import metric_cards
 from components.uploader import uploader
 from components.footer import footer
+from components.gauge import create_gauge
 
 # Modules
 from modules.audio_utils import save_uploaded_file
-from modules.whisper_model import transcribe_audio
-from modules.semantic import semantic_similarity
 from modules.reference_loader import load_reference
-from modules.audio_analysis import analyze_audio
-from modules.filler_detection import detect_fillers
-from modules.waveform import plot_waveform
-from modules.gemini_feedback import generate_feedback
-from components.gauge import create_gauge
 from modules.concept_checker import check_missing_concepts
+from modules.filler_detection import detect_fillers
 from modules.pdf_report import generate_pdf
 
 
@@ -90,6 +85,11 @@ def home():
             with st.spinner("🤖 AI is analyzing your explanation..."):
 
                 try:
+                    from modules.audio_analysis import analyze_audio
+                    from modules.gemini_feedback import generate_feedback
+                    from modules.semantic import semantic_similarity
+                    from modules.whisper_model import transcribe_audio
+                    from modules.waveform import plot_waveform
 
                     # ------------------------------------
                     # Save Audio

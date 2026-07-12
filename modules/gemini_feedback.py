@@ -1,10 +1,13 @@
 import os
 
-import google.generativeai as genai
+try:
+    import google.generativeai as genai
+except Exception:  # pragma: no cover - optional dependency
+    genai = None
 
 API_KEY = os.getenv("GEMINI_API_KEY")
 
-if API_KEY:
+if API_KEY and genai is not None:
     genai.configure(api_key=API_KEY)
     model = genai.GenerativeModel("gemini-2.5-flash")
 else:
