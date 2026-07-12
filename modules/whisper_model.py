@@ -6,6 +6,10 @@ except Exception:  # pragma: no cover - optional dependency
     whisper = None
 
 
+def is_whisper_available():
+    return whisper is not None
+
+
 @st.cache_resource
 def load_whisper_model():
     if whisper is None:

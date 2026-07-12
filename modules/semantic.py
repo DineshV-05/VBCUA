@@ -5,6 +5,14 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 
+def is_sentence_transformers_available():
+    try:
+        import sentence_transformers  # noqa: F401
+        return True
+    except Exception:
+        return False
+
+
 @st.cache_resource
 def load_model():
     try:

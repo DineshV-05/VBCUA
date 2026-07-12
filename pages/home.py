@@ -13,6 +13,9 @@ from modules.reference_loader import load_reference
 from modules.concept_checker import check_missing_concepts
 from modules.filler_detection import detect_fillers
 from modules.pdf_report import generate_pdf
+from modules.whisper_model import is_whisper_available
+from modules.semantic import is_sentence_transformers_available
+from modules.gemini_feedback import is_gemini_available
 
 
 def home():
@@ -70,11 +73,30 @@ def home():
 
     st.write("")
 
-    # -------------------------------------------------
-    # Analyze Button
-    # -------------------------------------------------
+    whisper_ready = is_whisper_available()
+    semantic_ready = is_sentence_transformers_available()
+    gemini_ready = is_gemini_available()
 
-    if st.button("🚀 Analyze Explanation", use_container_width=True):
+    if not whisper_ready:
+        st.warning(
+            "Whisper transcription is unavailable in this deployment. "
+            "The analysis button is disabled until the optional dependency is installed."
+        )
+
+    if not semantic_ready:
+        st.info(
+            "Semantic similarity is using a lightweight fallback instead of SentenceTransformers. "
+            "Results may be less precise."
+        )
+
+    if not gemini_ready:
+        st.info(
+            "Gemini feedback is unavailable because the Gemini API dependency or key is missing. "
+            "Feedback will show a placeholder message."
+        )
+
+    button_disabled = not whisper_ready
+    if st.button("🚀 Analyze Explanation", use_container_width=True, disabled=button_disabled):
 
         if audio is None:
 

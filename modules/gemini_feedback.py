@@ -14,6 +14,10 @@ else:
     model = None
 
 
+def is_gemini_available():
+    return model is not None
+
+
 def generate_feedback(
         concept,
         transcript,
