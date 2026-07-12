@@ -1,0 +1,199 @@
+body{
+
+    background:#eef4ff;
+
+}
+
+/* =========================
+Hero
+========================= */
+
+.hero-container{
+
+    background:linear-gradient(135deg,#2563eb,#4f46e5);
+
+    padding:55px;
+
+    border-radius:30px;
+
+    color:white;
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+    box-shadow:0px 20px 40px rgba(0,0,0,.18);
+
+}
+
+.hero-container h1{
+
+    font-size:52px;
+
+    margin-bottom:12px;
+
+}
+
+.hero-container p{
+
+    font-size:24px;
+
+    opacity:.95;
+
+}
+
+.hero-badge{
+
+    display:inline-block;
+
+    margin-top:25px;
+
+    padding:12px 26px;
+
+    border-radius:100px;
+
+    background:rgba(255,255,255,.20);
+
+    backdrop-filter:blur(12px);
+
+    font-size:18px;
+
+}
+
+/* =========================
+Cards
+========================= */
+
+.metric-card{
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+    margin-bottom:20px;
+
+}
+
+.metric-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 25px 45px rgba(37,99,235,.25);
+
+}
+
+.metric-icon{
+
+    font-size:50px;
+
+}
+
+.metric-title{
+
+    margin-top:15px;
+
+    font-size:22px;
+
+    color:#555;
+
+}
+
+.metric-value{
+
+    font-size:48px;
+
+    color:#2563eb;
+
+    font-weight:bold;
+
+    margin-top:15px;
+
+}
+
+/* =========================
+Buttons
+========================= */
+
+.stButton>button{
+
+    background:#2563eb;
+
+    color:white;
+
+    border-radius:12px;
+
+    height:58px;
+
+    font-size:20px;
+
+    border:none;
+
+}
+
+.stButton>button:hover{
+
+    background:#1d4ed8;
+
+}
+
+/* =========================
+Tabs
+========================= */
+
+.stTabs{
+
+    margin-top:20px;
+
+}
+
+/* =========================
+Uploader
+========================= */
+
+section[data-testid="stFileUploader"]{
+
+    border:2px dashed #2563eb;
+
+    border-radius:20px;
+
+    padding:15px;
+
+    background:white;
+
+}
+
+/* =========================
+Metrics
+========================= */
+
+div[data-testid="metric-container"]{
+
+    border-radius:18px;
+
+}
+
+/* =========================
+Scrollbar
+========================= */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#2563eb;
+
+    border-radius:10px;
+
+}

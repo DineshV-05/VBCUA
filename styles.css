@@ -1,0 +1,174 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+html, body, [class*="css"]{
+    font-family:'Poppins',sans-serif;
+}
+
+/* Hide Streamlit Default Elements */
+
+#MainMenu{
+    visibility:hidden;
+}
+
+footer{
+    visibility:hidden;
+}
+
+header{
+    visibility:hidden;
+}
+
+/* Background */
+
+.stApp{
+
+background:linear-gradient(135deg,#0F172A,#1E293B,#111827);
+
+color:white;
+
+}
+
+/* Hero Card */
+
+.hero{
+
+padding:40px;
+
+border-radius:25px;
+
+background:rgba(255,255,255,0.08);
+
+backdrop-filter:blur(20px);
+
+border:1px solid rgba(255,255,255,0.15);
+
+box-shadow:0px 15px 40px rgba(0,0,0,0.4);
+
+margin-bottom:35px;
+
+}
+
+/* Cards */
+
+.metric-card{
+
+padding:20px;
+
+border-radius:18px;
+
+background:rgba(255,255,255,0.05);
+
+backdrop-filter:blur(18px);
+
+text-align:center;
+
+transition:0.4s;
+
+border:1px solid rgba(255,255,255,.08);
+
+}
+
+.metric-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0px 10px 30px rgba(59,130,246,.4);
+
+}
+
+/* Upload Area */
+
+.upload-box{
+
+padding:25px;
+
+border-radius:18px;
+
+border:2px dashed #3B82F6;
+
+background:rgba(255,255,255,.04);
+
+text-align:center;
+
+margin-top:20px;
+
+}
+
+/* Titles */
+
+.big-title{
+
+font-size:50px;
+
+font-weight:700;
+
+color:white;
+
+}
+
+.sub-title{
+
+font-size:20px;
+
+color:#CBD5E1;
+
+}
+
+/* Button */
+
+.stButton>button{
+
+background:linear-gradient(90deg,#3B82F6,#8B5CF6);
+
+color:white;
+
+border:none;
+
+border-radius:12px;
+
+height:55px;
+
+font-size:18px;
+
+font-weight:600;
+
+width:100%;
+
+transition:0.4s;
+
+}
+
+.stButton>button:hover{
+
+transform:scale(1.03);
+
+box-shadow:0px 0px 25px #3B82F6;
+
+}
+
+/* Sidebar */
+
+section[data-testid="stSidebar"]{
+
+background:#111827;
+
+border-right:1px solid #374151;
+
+}
+
+/* Success */
+
+.stSuccess{
+
+border-radius:15px;
+
+}
+
+/* Info */
+
+.stInfo{
+
+border-radius:15px;
+
+}

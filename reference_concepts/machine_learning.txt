@@ -1,0 +1,25 @@
+Machine Learning is a branch of Artificial Intelligence that enables computers to learn from data without being explicitly programmed.
+
+It involves training algorithms using datasets to build predictive models.
+
+The main types are Supervised Learning, Unsupervised Learning and Reinforcement Learning.
+
+Machine Learning is widely used in recommendation systems, fraud detection, image recognition, medical diagnosis and natural language processing.
+
+Important concepts include:
+• Data
+• Algorithm
+• Model
+• Training
+• Prediction
+• Features
+• Labels
+• Accuracy
+Introduction to Machine Learning
+Machine learning is a subset of artificial intelligence that focuses on building systems capable of learning from and making decisions based on data. Unlike traditional software engineering, where programmers write explicit, hard-coded rules to solve a problem, machine learning allows a system to organically discover patterns within a dataset. By leveraging statistical algorithms, these models improve their performance over time as they are exposed to more information, effectively transforming raw inputs into actionable insights.
+
+The process of training a machine learning model relies heavily on the quality and quantity of the underlying data. Typically, this workflow begins with data collection and preprocessing, where noise is filtered out and the data is structured into a usable format. Once the data is ready, it is divided into training, validation, and testing subsets. The training set is used to adjust the internal weights of the model, the validation set helps fine-tune hyperparameters, and the final testing set provides an unbiased evaluation of how well the model generalizes to entirely new, unseen scenarios.
+
+There are three primary paradigms within machine learning: supervised learning, unsupervised learning, and reinforcement learning. Supervised learning involves training a model on labeled data, meaning every input comes paired with the correct output, which is ideal for tasks like spam detection or price prediction. In contrast, unsupervised learning deals with unlabeled data, tasking the algorithm with finding hidden structures or groupings on its own, such as segmenting customers by purchasing behavior. Reinforcement learning takes a different approach entirely, using a system of rewards and penalties to train an autonomous agent to navigate dynamic environments, like playing video games or driving self-driving cars.
+
+In recent years, deep learning has emerged as a powerful subfield of machine learning, driven by the rise of artificial neural networks. Inspired by the biological structure of the human brain, these deep networks consist of interconnected layers of nodes that can automatically extract high-level features from complex, unstructured data like audio, video, and text. This breakthrough has paved the way for massive advancements in modern technology, powering everything from facial recognition systems and real-time language translation to sophisticated generative AI models that can converse, write code, and create art.
